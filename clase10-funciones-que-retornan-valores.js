@@ -46,15 +46,14 @@ function imprimirProfesiones(persona){
     }
 }
 
-const MAYORIA_DE_EDAD = 18
-
 imprimirProfesiones(sacha)
+
+
+const MAYORIA_DE_EDAD = 18
 
 function esMayorDeEdad(persona){
    return persona.edad >= MAYORIA_DE_EDAD
 }
-
-
 
 function imprimirSiEsMayorDeEdad(persona) {
     if (esMayorDeEdad(persona)) {
@@ -63,3 +62,9 @@ function imprimirSiEsMayorDeEdad(persona) {
         console.log(`${persona.nombre} 'es menor de edad'`)
     }
 }
+
+imprimirSiEsMayorDeEdad(sacha)
+imprimirSiEsMayorDeEdad(juan)
+
+//Sacha 'es mayor de edad'
+//Juan 'es menor de edad'

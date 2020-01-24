@@ -2,8 +2,8 @@ var sacha = {
     nombre: "Sacha",
     apellido: "Lyfszyc",
     edad:28,
-    ingeniero: false,
-    cocinero: false,
+    ingeniero: true,
+    cocinero: true,
     cantante: false,
     dj: false,
     guitarrista: false,
@@ -42,6 +42,10 @@ function imprimirProfesiones(persona){
 
 imprimirProfesiones(sacha)
 
+//Sacha es:
+//ingeniero
+//cocinero
+//piloto de drone
 
 
 function imprimirSiEsMayorDeEdad(persona){
@@ -56,3 +60,8 @@ function imprimirSiEsMayorDeEdad(persona){
   }
 
   imprimirSiEsMayorDeEdad(sacha)
+
+//Sacha tiene 28,
+//es mayor de edad
+
+  /* Los condicionales nos permiten decidir si un código se ejecuta o no. También introducimos un nuevo tipo de datos primitivos: el booleano, que determina si un valor es falso o verdadero. */

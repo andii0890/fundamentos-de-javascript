@@ -14,7 +14,7 @@ var dario = {
 
 function imprimirNombreEnMayusculas (persona) { 
     // var nombre = persona.nombre (es lo mismo que el ejemplo de abajo)
-    var {nombre} = persona
+    var { nombre } = persona
 console.log(nombre.toUpperCase()) 
 } 
 
@@ -23,7 +23,12 @@ imprimirNombreEnMayusculas (dario)
 
 //Desafío
 
-function imprimirNombreYEdad() {
-    //Hola me llamo Sacha y tengo 28 años
-    //Hola me llamo Darío y tengo 27 años
+function imprimirNombreYEdad(persona) {
+    console.log(`Hola me llamo ${persona.nombre} y tengo ${persona.edad} años`)
 }
+
+imprimirNombreYEdad(sasha)
+imprimirNombreYEdad(dario)
+
+//Hola me llamo Sacha y tengo 28 años
+//Hola me llamo Darío y tengo 27 años

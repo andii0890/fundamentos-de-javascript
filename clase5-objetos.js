@@ -12,12 +12,19 @@ var dario = {
 
 }
 
-function imprimirNombreEnMayusculas ({ nombre }) { 
-console.log(nombre.toUpperCase()) 
+var felipe = {
+    nombre: "felipe",
+    apellido: "nevarez",
+    edad: 30
+}
+
+function imprimirNombreEnMayusculas ({ apellido = '' }) { 
+console.log(apellido.toUpperCase()) 
 } 
 
 imprimirNombreEnMayusculas (sasha)
 imprimirNombreEnMayusculas (dario)
+imprimirNombreEnMayusculas(felipe)
 imprimirNombreEnMayusculas ({ nombre: "pepito "})
 
 /* Los objetos se definen delimitados mediante llaves {}

@@ -21,11 +21,6 @@ console.log(nombre.toUpperCase())
 imprimirNombreEnMayusculas (sasha)
 imprimirNombreEnMayusculas (dario)
 
-/*
-function cumpleanos (persona) {
-    persona.edad += 1
-} 
-*/
 
 function cumpleanos (persona) {
     return {
@@ -34,4 +29,17 @@ function cumpleanos (persona) {
     }
 }
 
+sachaMasViejo = cumpleanos(sasha)
+console.log(sachaMasViejo)
+console.log(sasha)
+
+/*
+function cumpleanos (persona) {
+    persona.edad += 1
+} 
+
+Este ejemplo modificaría dentro y fuera de la función la edad de la persona (side effect)
+por eso se hace una copia desestructurando al objeto(...) 
+y se modifica solamente el objeto dentro de la función.
+*/
 
